@@ -156,10 +156,10 @@ hr{
     text-align:center;
 }
 
-.Cadastrolivro{
+form.Cadastrolivro{
     text-align: center;
-    
-    
+    background: #00000009;
+    margin: auto;
 }
 
 

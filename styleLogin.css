@@ -55,7 +55,8 @@ textarea:focus, input:focus{
 }
 
 a{
-    font-size: .8rem
+    text-decoration: none;
+    font-size: .8rem   
 }
 
 a:hover{
@@ -82,6 +83,7 @@ label, input{
     display: block;
     width: 100%;
     text-align: left;
+    
 }
 
 label{
@@ -117,6 +119,11 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: #e47814f6;
     transition: .5s;
+}
+
+#register-container p{
+    margin-bottom: 10px;
+
 }
 
 

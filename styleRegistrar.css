@@ -74,13 +74,13 @@ a:hover{
     color: #DE6D04
 }
 
-#login-container{
+#registration-container{
     background-color: #00000009;
     width: 350px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 30px;
-    margin-top: 10vh;
+    margin-top: 50px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -107,8 +107,6 @@ input{
     padding: 5px;
     margin: 10px;
     font-size: 1rem;
-    
-    
 }
 
 #forgot-pass{
@@ -121,7 +119,7 @@ input[type="submit"]{
     text-transform: uppercase;
     font-weight: bold;
     border: none;
-    height: 35px;
+    height: 40px;
     border-radius: 20px;
     margin-top: 30px;
     color: #ffff;
@@ -161,9 +159,3 @@ footer{
 footer img{
     width: 20%;
 }
-
-
-
-
-
-

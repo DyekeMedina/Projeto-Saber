@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Saber</title>
-    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="styleRegistrar.css">
 </head>
 <body>
     <header>
@@ -28,28 +28,34 @@
     </header>
        <hr>
     <section>
-        <div id="login-container">
-            <h1>Login</h1>
+        <div id="registration-container">
+            <h1>Registrar</h1>
             <form action="">
+               <label for="name">Nome</label>
+               <input type="text" required name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off">
+               <label for="phone">Telefone</label>
+               <input type="tel" required name="phone" id="phone" placeholder="Digite seu telefone (DDD+Numero)" autocomplete="off" pattern="[0-9]{11}">
+
+
                <label for="email">E-mail</label>
                <input type="email" required name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
                <label for="password">Senha</label>
                <input type="password" required name=password id="password" placeholder="Digite sua Senha">
-               <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-               <input type="submit" value="Entrar">
+
+               <label for="confirm-password">Confirmar Senha</label>
+               <input type="password" required name=password id="password" placeholder="Digite sua Senha">
+
+               
+               <input type="submit" value="REGISTRAR">
             </form>
-            <div id="register-container">
-                <p>Ainda não tem conta?</p>
-                <a href="registrar.html">Registrar</a>
-            </div>
+            
         </div>
     </section>
     <footer>
         <p>"A leitura engrandece a alma"<br>
             Voltaire</p>  
-        <img src="Imagens/footer2.png"alt="">       
-        
-        
+        <img src="Imagens/footer2.png"alt="">
+           
     </footer>
 </body>
 </html>

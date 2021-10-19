@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Saber</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styledoar.css">
 </head>
 <body>
     <header>
@@ -16,9 +16,9 @@
             <nav>
                 <div class="menu">
                     <ul>                
-                        <li><a href="#">OBJETIVO</a></li>
-                        <li><a href="#">COMO FUNCIONA</a></li>
-                        <li><a href="#">BENEFÍCIOS</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">DOAR</a></li>
+                        <li><a href="#">BIBLIOTECA</a></li>
                         <li><a href="#">CONTATO</a></li>
                         <li><a href="#">ENTRAR</a></li>
                     </ul>
@@ -27,38 +27,48 @@
         </div>  
     </header>
        <hr>
+       <section>
+        <div id="registration-container">
+            <h1>Registrar Livro</h1>
+            <form action="">
+               <label for="name">Nome do Livro</label>
+               <input type="text" required name="nome" id="nome" placeholder="Digite nome do livro" autocomplete="off">
 
-    <form class="Cadastrolivro">
-        <b>Nome do Livro:</b>
-        <input type="text" name="nome" placeholder="Digite nome do livro"/>
-        <br>
-        <br>
-        <b>Autor do Livro:</b>
-        <input type="text" name="nome" placeholder="Digite nome do autor"/>
+               <label for="autor">Autor do Livro</label>
+               <input type="text" required name="nome" id="nome" placeholder="Digite nome do Autor do livro" autocomplete="off">
+               
 
-        <br>
-        <br>
+               <label for="estado do livro">Selecione o estado do livro</label>
+                <select required name="estado do livro" id="estado do livro">
+                    <option value="Vazio" disabled selected></option>
+                    <option value="Ruim">Ruim</option>
+                    <option value="Bom">Bom</option>
+                    <option value="Excelente">Excelente</option>
+                </select>
 
         
-        <b>Selecione o estado do Livro:</b>
-        <select name="estado">
-            <option value="Vazio"></option>
-            <option value="Ruim">Ruim</option>
-            <option value="Bom">Bom</option>
-            <option value="Excelente">Excelente</option>
-        </select>
 
-        <br>
-        <br>
+                <label for="Genero">Selecione o gênero:</label>
+                <select name="genero" id="genero" required>
+                    <option value="Vazio" disabled selected></option>
+                    <option value="Ação">Ação</option>
+                    <option value="Ficção">Ficção</option>
+                    <option value="Romance">Romance</option>
+                </select>
 
-        <b>Selecione o gênero:</b>
-        <select name="estado">
-            <option value="Vazio"></option>
-            <option value="Ação">Ação</option>
-            <option value="Ficção">Ficção</option>
-            <option value="Romance">Romance</option>
-        </select>
-    <form>
-          
+               
+               <input type="submit" value="REGISTRAR LIVRO">
+            </form>
+            
+        </div>
+    </section>
+    <footer>
+        <p>"A leitura engrandece a alma"<br>
+            Voltaire</p>  
+        <img src="Imagens/footer2.png"alt="">
+           
+    </footer>
+    
+        
 </body>
 </html>

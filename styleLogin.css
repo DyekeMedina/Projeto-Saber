@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+   }
+
+.logo{
+    background-color: #DE6D04;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.menu{
+    background-color: #DE6D04 ;    
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    
+   
+    
+}
+.menu ul{
+    text-align: center;
+}
+
+.menu ul li{
+    display: inline;
+        
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+    
+}
+
+hr{
+    margin: 20px;
+} 
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+a{
+    font-size: .8rem
+}
+
+a:hover{
+    color: #DE6D04
+}
+
+#login-container{
+    background-color: #00000009;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+    }
+
+input{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #ffff;
+    background-color: #DE6D04;
+    cursor: pointer;
+
+
+}
+
+input[type="submit"]:hover{
+    background-color: #e47814f6;
+    transition: .5s;
+}
+
+
+
+
+
+

@@ -203,3 +203,7 @@ footer img{
 
 .final ul {list-style-image: url("Imagens/flat-color-icons_ok.png")}
 
+a{
+    text-decoration: none;
+    font-size: .8rem   
+}

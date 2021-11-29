@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Saber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylecontato.css')}}">
+   </head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/Logo3-pp.png')}}" alt="Logo Ponte do Saber"></a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>                
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/doar">DOAR</a></li>
+                        <li><a href="/biblioteca">BIBLIOTECA</a></li>
+                        <li><a href="/contato">CONTATO</a></li>
+                        <li><a href="/entrar">ENTRAR</a></li>
+                    </ul>
+                </div>
+            </nav>            
+        </div>  
+    </header>
+
+    <hr>
+    <main><h2>Para sanar qualquer dúvida, favor entrar em contato com o e-mail abaixo:</h2>
+        <br>
+        <p>atendimento.pontedosaber@outlook.com</p></main>
+
+        <hr>
+    
+    <div><img id="laberto" src="{{ url_for('static', filename='images/livroaberto953.png')}}" alt=""></div>
+    <hr>
+    <footer>
+        <p>"A leitura engrandece a alma"<br>
+            Voltaire</p>  
+        <img src="{{ url_for('static', filename='images/footer2.png')}}"alt=""> 
+    </footer>
+    </body>
+</html>

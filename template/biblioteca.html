@@ -1,0 +1,61 @@
+]<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Saber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylecontato.css')}}">
+   </head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/Logo3-pp.png')}}" alt="Logo Ponte do Saber"></a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>                
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/doar">DOAR</a></li>
+                        <li><a href="/biblioteca">BIBLIOTECA</a></li>
+                        <li><a href="/contato">CONTATO</a></li>      
+                        <li><a href="/entrar">ENTRAR</a></li>
+                    </ul>
+                </div>
+            </nav>            
+        </div>  
+    </header>
+
+    <hr>
+    
+		<h3>Livros Disponíveis</h3>
+	
+    <hr>
+	<center>
+		<table border=5>
+			<thead>
+				<td><center>Nome do Livro</center></td>
+				<td><center>Autor</center></td>
+				<td><center>Estado de Conservação</center></td>
+				<td><center>Gênero</center></td>
+			</thead>
+			{% for row in rows %}
+			<tr>
+				<td><center>{{row["nome"]}}</center></td>
+				<td><center>{{row["autor"]}}</center></td>
+				<td><center>{{row["estado"]}}</center></td>
+				<td><center>{{row["genero"]}}</center></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</center>     
+    <hr>
+    <footer>
+        <p>"A leitura engrandece a alma"<br>
+            Voltaire</p>  
+        <img src="{{ url_for('static', filename='images/footer2.png')}}"alt=""> 
+    </footer>
+    </body>
+</html>

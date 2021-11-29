@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Saber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleLogin.css')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="{{ url_for('static', filename='images/Logo3-pp.png')}}" alt="Logo Ponte do Saber"></a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>                
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/doar">DOAR</a></li>
+                        <li><a href="/biblioteca">BIBLIOTECA</a></li>
+                        <li><a href="/contato">CONTATO</a></li>      
+                        <li><a href="/entrar">ENTRAR</a></li>
+                    </ul>
+                </div>
+            </nav>            
+        </div>  
+    </header>
+       <hr>
+    <section>
+        <div id="login-container">
+            <h1>Login</h1>
+            <form action="/login">
+               <label for="email">E-mail</label>
+               <input type="email" required name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
+               <label for="password">Senha</label>
+               <input type="password" required name="password" id="password" placeholder="Digite sua Senha">
+               <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+               <input type="submit" value="Entrar">
+            </form>
+            <div id="register-container">
+                <p>Ainda não tem conta?</p>
+                <a href="/registrar">Registrar</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>"A leitura engrandece a alma"<br>
+            Voltaire</p>  
+        <img src="{{ url_for('static', filename='images/footer2.png')}}"alt="">       
+        
+        
+    </footer>
+</body>
+</html>

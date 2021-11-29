@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://dyekemedina.github.io/Projeto-Saber/index.html# -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>Projeto Saber</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Logo3-pp.png')}}" alt="Logo Ponte do Saber">
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>                
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/doar">DOAR</a></li>
+                        <li><a href="/biblioteca">BIBLIOTECA</a></li>
+                        <li><a href="/contato">CONTATO</a></li>      
+                        <li><a href="/entrar">ENTRAR</a></li>
+                    </ul>
+                </div>
+            </nav>            
+        </div>  
+    </header>
+       <hr>
+    <main>  
+        <div>      
+            <h1>Sobre o projeto:</h1>
+            <p>A Ponte do Saber é um projeto criado por alunos universitários de Bauru, com o intuito de promover a circulação de livros entre a comunidade, incentivando a leitura e a sustentabilidade.</p>           
+            <img id="laberto" src="{{ url_for('static', filename='images/livroaberto953.png')}}" alt=""> 
+        </div>
+
+        <hr>
+    <div class="container1">
+        <div id="filho"><h1>Como Funciona?</h1>
+        <p>Se você tem algum livro parado, esquecido em algum canto, agora você pode dar a ele um Novo Lar. Acesse a página de doação e veja com mais detalhes como você pode mudar a vida de outra pessoa ainda hoje.
+
+            Você, aluno ou não, que tem interesse em adquirir um novo livro de forma gratuita, clique em receber e veja os títulos disponíveis para doação.
+            </p>
+        </div>
+        <div id="filho"><img src="{{ url_for('static', filename='images/imagem1-trans.png')}}" alt=""></div>
+    </div>
+
+    <hr>
+    
+    <div class="container2">
+        <div id="filho1">
+            <img src="{{ url_for('static', filename='images/box2-corte.png')}}" alt="">
+            <a href="/doar">
+                <button>
+                    DOAR
+                </button>
+            </a>
+            
+        </div>
+       <div id="filho1">
+            <img src="./images/box3.png" alt="">
+            <a href="biblioteca">
+                <button>
+                    RECEBER
+                </button>
+            </a>
+       </div>
+    </div>
+    
+    <hr>
+
+    
+    <div class="final">
+        <h1>Beneficios</h1>
+        <p></p><ul>
+            <li>A doação de livros contribui para a sustentabilidade, pois permite a circulação e reúso.</li>
+            <li>Levar o conhecimento e cultura para aqueles que não têm condições de comprar um livro.</li>
+            <li>Incentiva a leitura.</li>
+        </ul><p></p>
+    </div>
+    
+    <hr>
+
+    </main>
+    <footer>
+        <p>"A leitura engrandece a alma"<br>
+            Voltaire</p>  
+        <img src="./images/footer2.png" alt="">       
+        
+        
+    </footer>
+
+
+
+</body></html>

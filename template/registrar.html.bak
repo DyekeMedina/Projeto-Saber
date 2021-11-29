@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Saber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleRegistrar.css')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/Logo3-pp.png')}}" alt="Logo Ponte do Saber"></a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>                
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/doar">DOAR</a></li>
+                        <li><a href="/biblioteca">BIBLIOTECA</a></li>
+                        <li><a href="/contato">CONTATO</a></li>
+                        <li><a href="/entrar">ENTRAR</a></li>
+                    </ul>
+                </div>
+            </nav>            
+        </div>  
+    </header>
+       <hr>
+    <section>
+        <div id="registration-container">
+            <h1>Registrar</h1>
+            <form action="/salvar_registro" method="POST">
+               <label for="name">Nome</label>
+               <input type="text" required name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off">
+               <label for="phone">Telefone</label>
+               <input type="tel" required name="phone" id="phone" placeholder="Digite seu telefone (DDD+Numero)" autocomplete="off" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$">
+               <label for="email">E-mail</label>
+               <input type="email" required name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
+               <label for="password">Senha</label>
+               <input type="password" required name=password id="password" placeholder="Digite sua Senha">
+               <label for="confirm-password">Confirmar Senha</label>
+               <input type="password" required name=password id="password" placeholder="Confirme sua Senha">
+
+               
+               <input type="submit" value="REGISTRAR">
+            </form>
+            
+        </div>
+    </section>
+	<hr>
+    <footer>
+        <p>"A leitura engrandece a alma"<br>
+            Voltaire</p>  
+        <img src="{{ url_for('static', filename='images/footer2.png')}}"alt="">
+           
+    </footer>
+</body>
+</html>
